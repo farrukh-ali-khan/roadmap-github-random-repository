@@ -150,35 +150,3 @@ function setErrorState(errorMsg) {
     }
   };
 }
-
-// When the DOM is fully loaded, create the favicon dynamically
-document.addEventListener("DOMContentLoaded", function () {
-  // Create a canvas element
-  const canvas = document.createElement("canvas");
-  canvas.width = 64;
-  canvas.height = 64;
-  const ctx = canvas.getContext("2d");
-
-  // Draw a background rectangle (dark background)
-  ctx.fillStyle = "#24292e";
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-  // Draw the text "GRRF" in the center
-  ctx.font = "bold 20px Arial";
-  ctx.fillStyle = "#ffffff";
-  ctx.textAlign = "center";
-  ctx.textBaseline = "middle";
-  ctx.fillText("GRRF", canvas.width / 2, canvas.height / 2);
-
-  // Convert the canvas drawing to a data URL
-  const faviconURL = canvas.toDataURL("image/png");
-
-  // Create a new link element for the favicon
-  const link = document.createElement("link");
-  link.rel = "icon";
-  link.type = "image/png";
-  link.href = faviconURL;
-
-  // Append the link element to the document head
-  document.head.appendChild(link);
-});
