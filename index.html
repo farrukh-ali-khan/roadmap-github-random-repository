@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Repository Finder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>GitHub Repository Finder</h1>
+
+      <!-- Language selection -->
+      <div class="form-group">
+        <label for="languageSelect">Select a Language</label>
+        <select id="languageSelect">
+          <option value="">-- Select a language --</option>
+        </select>
+      </div>
+
+      <!-- Message area (used for empty, loading, or error states) -->
+      <div id="message" class="message">Please select a language</div>
+
+      <!-- Repository details (shown only after successful fetch) -->
+      <div id="repoDetails" class="repo-details hidden">
+        <h2 id="repoName"></h2>
+        <p id="repoDescription"></p>
+        <div class="repo-stats">
+          <span id="repoStars"></span>
+          <span id="repoForks"></span>
+          <span id="repoIssues"></span>
+        </div>
+        <!-- Refresh or Retry button (shown after success or error) -->
+        <button id="refreshBtn" class="hidden">Refresh</button>
+      </div>
+    </div>
+
+    <!-- Main JS -->
+    <script src="app.js"></script>
+  </body>
+</html>

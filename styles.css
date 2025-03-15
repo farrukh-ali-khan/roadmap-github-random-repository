@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .message {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 20px 0;
+    color: #555;
+  }
+  
+  .repo-details {
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .repo-stats {
+    margin-top: 10px;
+    color: #666;
+  }
+  
+  .repo-stats span {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007acc;
+    color: #fff;
+  }
+  
+  button:hover {
+    background-color: #005fab;
+  }
+  
